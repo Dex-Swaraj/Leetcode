@@ -7,6 +7,7 @@ Short summaries of the solution files in this repository.
 - [189_roatate_array.cpp](189_roatate_array.cpp): Rotate array to the right by `k` using an auxiliary buffer and modular indexing.
 - [26_remove_duplicates_from_sorted_array.cpp](26_remove_duplicates_from_sorted_array.cpp): Remove duplicates in-place from a sorted array (two-pointer), returning count of unique elements.
 - [27_remove_element.cpp](27_remove_element.cpp): Remove all occurrences of a value by swapping with the end and shrinking the effective array; returns new length.
+- [80_Remove_Duplicates_from_Sorted_Array_2.cpp](80_Remove_Duplicates_from_Sorted_Array_2.cpp): Remove duplicates from a sorted array allowing each element to appear at most twice; uses two-pointer technique comparing with element two positions back.
 - [88_merge_sorted_array.cpp](88_merge_sorted_array.cpp): Merge two sorted arrays in-place from the back using three pointers.
 - [125_valid_palindrome.cpp](125_valid_palindrome.cpp): Check if a string is a palindrome by ignoring non-alphanumeric characters and letter case with a two-pointer scan.
 
