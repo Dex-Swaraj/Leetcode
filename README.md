@@ -3,6 +3,7 @@
 Short summaries of the solution files in this repository.
 
 - [100_same_tree.cpp](100_same_tree.cpp): Recursively compare two binary trees for structural and value equality.
+- [101_Symmetric_Tree.cpp](101_Symmetric_Tree.cpp): Check whether a binary tree is symmetric around its center by comparing mirror subtrees recursively.
 - [169_majority_element.cpp](169_majority_element.cpp): Boyer–Moore Voting Algorithm to find the majority element (> n/2); returns -1 if none.
 - [189_roatate_array.cpp](189_roatate_array.cpp): Rotate array to the right by `k` using an auxiliary buffer and modular indexing.
 - [26_remove_duplicates_from_sorted_array.cpp](26_remove_duplicates_from_sorted_array.cpp): Remove duplicates in-place from a sorted array (two-pointer), returning count of unique elements.
