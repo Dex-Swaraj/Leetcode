@@ -16,3 +16,4 @@ Short summaries of the solution files in this repository.
 * [80_Remove_Duplicates_from_Sorted_Array_2.cpp](80_Remove_Duplicates_from_Sorted_Array_2.cpp): Remove duplicates from a sorted array allowing each element to appear at most twice; uses two-pointer technique comparing with element two positions back.
 * [88_merge_sorted_array.cpp](88_merge_sorted_array.cpp): Merge two sorted arrays in-place from the back using three pointers.
 - [`155_min_stack.cpp`] ( 155_min_stack.cpp)— Design a stack that returns the minimum element in constant time alongside standard stack operations.
+[150_evaluate_reverse_polish_notation.cpp] — Evaluate an arithmetic expression written in Reverse Polish Notation (postfix notation) using a stack, supporting the operators +, -, *, and / while processing operands in the correct order.
