@@ -15,3 +15,4 @@ Short summaries of the solution files in this repository.
 * [71_simplify_path.cpp](71_simplify_path.cpp): Simplify a Unix-style absolute path by processing directory names with a stack and resolving ".", "..", and redundant slashes.
 * [80_Remove_Duplicates_from_Sorted_Array_2.cpp](80_Remove_Duplicates_from_Sorted_Array_2.cpp): Remove duplicates from a sorted array allowing each element to appear at most twice; uses two-pointer technique comparing with element two positions back.
 * [88_merge_sorted_array.cpp](88_merge_sorted_array.cpp): Merge two sorted arrays in-place from the back using three pointers.
+- [`155_min_stack.cpp`] ( 155_min_stack.cpp)— Design a stack that returns the minimum element in constant time alongside standard stack operations.
