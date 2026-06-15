@@ -1,123 +1,184 @@
-# Codeforces Solutions
+# LeetCode Solutions
 
-This repository contains my C++ solutions to various Codeforces problems. Each solution is written with competitive programming constraints in mind and follows an efficient approach.
+This repository contains my C++ solutions to various LeetCode problems. Each solution follows the standard LeetCode `Solution` class format and is designed to be efficient and easy to understand.
 
-## Problem List
+## Solved Problems
 
-### 1. 230A - Dragons
-- File: `dragons.cpp`
-- Difficulty: Easy
-- Description:
-  Kirito starts with a certain strength and must defeat all dragons. Each dragon requires a minimum strength to defeat and grants additional strength after being defeated.
-- Approach:
-  1. Store dragons as `(strength, bonus)` pairs.
-  2. Sort dragons by required strength.
-  3. Defeat dragons in order, increasing strength after each victory.
-  4. If any dragon cannot be defeated, print `NO`; otherwise `YES`.
+### Arrays & Strings
 
----
+#### 11. Container With Most Water
 
-### 2. 1462A - Favorite Sequence
-- File: `favorite_Sequence.cpp`
-- Difficulty: Easy
-- Description:
-  Construct a new sequence by alternately taking elements from the beginning and end of the array.
-- Approach:
-  1. Use two pointers (`left` and `right`).
-  2. Print the left element, then the right element.
-  3. Move pointers inward until all elements are processed.
+* File: `11_container_with_most_water.cpp`
+* Approach:
 
----
+  1. Use two pointers at both ends of the array.
+  2. Calculate the area formed by the pointers.
+  3. Move the pointer with the smaller height to maximize area.
 
-### 3. 2000B - Seating in Bus
-- File: `seating_inBus.cpp`
-- Difficulty: Easy
-- Description:
-  Determine whether passengers can be seated according to the given adjacency constraints.
-- Approach:
-  1. Track occupied seats.
-  2. For every arriving passenger, verify at least one neighboring seat is occupied when required.
-  3. Output `YES` if all conditions are satisfied; otherwise `NO`.
+#### 20. Valid Parentheses
 
----
+* File: `20_valid_parentheses.cpp`
+* Approach:
 
-### 4. String Rotation Game
-- File: `String_rotationGame.cpp`
-- Difficulty: Easy
-- Description:
-  Analyze different rotations of a string and determine the best possible result according to the problem rules.
-- Approach:
-  1. Generate possible rotations.
-  2. Evaluate each rotation.
-  3. Return the optimal answer.
+  1. Use a stack to track opening brackets.
+  2. Match each closing bracket with the stack top.
+  3. Return true if all brackets are matched correctly.
 
----
+#### 26. Remove Duplicates from Sorted Array
 
-### 5. Your Name
-- File: `your_Nmae.cpp`
-- Difficulty: Easy
-- Description:
-  Process the given strings and determine whether the required condition holds.
-- Approach:
-  1. Read the input strings.
-  2. Apply the required comparison logic.
-  3. Print the corresponding result.
+* File: `26_remove_duplicates_from_sorted_array.cpp`
+* Approach:
 
----
+  1. Use two pointers.
+  2. Keep unique elements at the beginning of the array.
+  3. Return the count of unique elements.
 
-### 6. Notelock
-- File: `notelock.cpp`
-- Difficulty: Easy
-- Description:
-  Count the minimum number of protected positions while maintaining the required spacing constraint.
-- Approach:
-  1. Traverse the note sequence.
-  2. Track the last protected position.
-  3. Create a new protected position only when the gap condition is satisfied.
-  4. Output the total count.
+#### 27. Remove Element
 
----
+* File: `27_remove_element.cpp`
+* Approach:
 
-### 7. Discounts
-- File: `discounts.cpp`
-- Difficulty: Easy
-- Description:
-  Calculate the final cost after applying the discount rules specified in the problem.
-- Approach:
-  1. Read item prices and discount information.
-  2. Apply the required discount strategy.
-  3. Output the resulting value.
+  1. Traverse the array.
+  2. Copy elements not equal to the target value.
+  3. Return the new length.
 
----
+#### 71. Simplify Path
 
-### 8. Journey
-- File: `journey.cpp`
-- Difficulty: Easy
-- Description:
-  Determine the optimal outcome for the journey based on the given constraints.
-- Approach:
-  1. Process the input parameters.
-  2. Apply the mathematical/greedy logic required by the problem.
-  3. Print the final answer.
+* File: `71_simply_path.cpp`
+* Approach:
+
+  1. Split the path by '/'.
+  2. Use a stack to process directory names.
+  3. Reconstruct the canonical path.
+
+#### 80. Remove Duplicates from Sorted Array II
+
+* File: `80_remove_duplicates_from_sorted_array_2.cpp`
+* Approach:
+
+  1. Allow at most two occurrences of each value.
+  2. Use a write pointer to update the array.
+  3. Return the resulting length.
+
+#### 88. Merge Sorted Array
+
+* File: `88_merge_sorted_array.cpp`
+* Approach:
+
+  1. Start from the end of both arrays.
+  2. Place the larger element at the last free position.
+  3. Continue until all elements are merged.
+
+#### 125. Valid Palindrome
+
+* File: `125_valid_palindrome.cpp`
+* Approach:
+
+  1. Ignore non-alphanumeric characters.
+  2. Compare characters using two pointers.
+  3. Return true if the string is a palindrome.
+
+#### 169. Majority Element
+
+* File: `169_majority_element.cpp`
+* Approach:
+
+  1. Apply Boyer-Moore Voting Algorithm.
+  2. Maintain a candidate and count.
+  3. Return the majority element.
+
+#### 189. Rotate Array
+
+* File: `189_rotate_array.cpp`
+* Approach:
+
+  1. Reverse the entire array.
+  2. Reverse the first k elements.
+  3. Reverse the remaining elements.
 
 ---
 
-### 9. Trippi Troppi
-- File: `trippi_Troppi.cpp`
-- Difficulty: Easy
-- Description:
-  Convert the ancient country name into its modern abbreviation.
-- Approach:
-  1. Read the three words forming the ancient name.
-  2. Extract the first character from each word.
-  3. Concatenate them and print the resulting abbreviation.
+### Stack
+
+#### 150. Evaluate Reverse Polish Notation
+
+* File: `150_evaluate_reverse_polish_notation.cpp`
+* Approach:
+
+  1. Use a stack for operands.
+  2. Apply operators on the top elements.
+  3. Push results back onto the stack.
+
+#### 155. Min Stack
+
+* File: `155_min_stack.cpp`
+* Approach:
+
+  1. Maintain a normal stack and a minimum stack.
+  2. Update minimum values during push/pop operations.
+  3. Retrieve the minimum element in O(1).
 
 ---
 
-## How to Run
+### Binary Trees
+
+#### 100. Same Tree
+
+* File: `100_same_tree.cpp`
+* Approach:
+
+  1. Recursively compare corresponding nodes.
+  2. Check values and subtree structures.
+  3. Return true if both trees are identical.
+
+#### 101. Symmetric Tree
+
+* File: `101_symmetric_tree.cpp`
+* Approach:
+
+  1. Compare left and right subtrees recursively.
+  2. Verify mirror symmetry at each level.
+  3. Return true if symmetric.
+
+#### 104. Maximum Depth of Binary Tree
+
+* File: `104_maximum_depth.cpp`
+* Approach:
+
+  1. Recursively compute depths of left and right subtrees.
+  2. Take the maximum depth.
+  3. Add one for the current node.
+
+#### 226. Invert Binary Tree
+
+* File: `226_invert_binary_tree.cpp`
+* Approach:
+
+  1. Swap left and right children.
+  2. Recursively invert both subtrees.
+  3. Return the root.
+
+---
+
+## How to Use
 
 Compile any solution using:
 
 ```bash
 g++ filename.cpp -o output
 ./output
+```
+
+Example:
+
+```bash
+g++ 20_valid_parentheses.cpp -o valid
+./valid
+```
+
+## Notes
+
+* Language: C++17
+* Platform: LeetCode
+* Each file contains a standalone LeetCode-style `Solution` class.
+* Solutions focus on clarity, efficiency, and commonly accepted interview approaches.
