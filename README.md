@@ -1,19 +1,123 @@
-# LeetCode Solutions
+# Codeforces Solutions
 
-Short summaries of the solution files in this repository.
+This repository contains my C++ solutions to various Codeforces problems. Each solution is written with competitive programming constraints in mind and follows an efficient approach.
 
-* [100_same_tree.cpp](100_same_tree.cpp): Recursively compare two binary trees for structural and value equality.
-* [101_Symmetric_Tree.cpp](101_Symmetric_Tree.cpp): Check whether a binary tree is symmetric around its center by comparing mirror subtrees recursively.
-* [104_maximum_depth](104_maximum_depth): Compute the maximum depth (height) of a binary tree using recursive DFS.
-* [125_valid_palindrome.cpp](125_valid_palindrome.cpp): Check if a string is a palindrome by ignoring non-alphanumeric characters and letter case with a two-pointer scan.
-* [169_majority_element.cpp](169_majority_element.cpp): Boyer–Moore Voting Algorithm to find the majority element (> n/2); returns -1 if none.
-* [189_roatate_array.cpp](189_roatate_array.cpp): Rotate array to the right by `k` using an auxiliary buffer and modular indexing.
-* [20_Valid_Parentheses.cpp](20_Valid_Parentheses.cpp): Validate whether a string of brackets is balanced using a stack to match opening and closing parentheses.
-* [226_invert_binary_tree.cpp](226_invert_binary_tree.cpp): Invert a binary tree by swapping left and right children recursively.
-* [26_remove_duplicates_from_sorted_array.cpp](26_remove_duplicates_from_sorted_array.cpp): Remove duplicates in-place from a sorted array (two-pointer), returning count of unique elements.
-* [27_remove_element.cpp](27_remove_element.cpp): Remove all occurrences of a value by swapping with the end and shrinking the effective array; returns new length.
-* [71_simplify_path.cpp](71_simplify_path.cpp): Simplify a Unix-style absolute path by processing directory names with a stack and resolving ".", "..", and redundant slashes.
-* [80_Remove_Duplicates_from_Sorted_Array_2.cpp](80_Remove_Duplicates_from_Sorted_Array_2.cpp): Remove duplicates from a sorted array allowing each element to appear at most twice; uses two-pointer technique comparing with element two positions back.
-* [88_merge_sorted_array.cpp](88_merge_sorted_array.cpp): Merge two sorted arrays in-place from the back using three pointers.
-- [`155_min_stack.cpp`] ( 155_min_stack.cpp)— Design a stack that returns the minimum element in constant time alongside standard stack operations.
-* [150_evaluate_reverse_polish_notation.cpp] — Evaluate an arithmetic expression written in Reverse Polish Notation (postfix notation) using a stack, supporting the operators +, -, *, and / while processing operands in the correct order.
+## Problem List
+
+### 1. 230A - Dragons
+- File: `dragons.cpp`
+- Difficulty: Easy
+- Description:
+  Kirito starts with a certain strength and must defeat all dragons. Each dragon requires a minimum strength to defeat and grants additional strength after being defeated.
+- Approach:
+  1. Store dragons as `(strength, bonus)` pairs.
+  2. Sort dragons by required strength.
+  3. Defeat dragons in order, increasing strength after each victory.
+  4. If any dragon cannot be defeated, print `NO`; otherwise `YES`.
+
+---
+
+### 2. 1462A - Favorite Sequence
+- File: `favorite_Sequence.cpp`
+- Difficulty: Easy
+- Description:
+  Construct a new sequence by alternately taking elements from the beginning and end of the array.
+- Approach:
+  1. Use two pointers (`left` and `right`).
+  2. Print the left element, then the right element.
+  3. Move pointers inward until all elements are processed.
+
+---
+
+### 3. 2000B - Seating in Bus
+- File: `seating_inBus.cpp`
+- Difficulty: Easy
+- Description:
+  Determine whether passengers can be seated according to the given adjacency constraints.
+- Approach:
+  1. Track occupied seats.
+  2. For every arriving passenger, verify at least one neighboring seat is occupied when required.
+  3. Output `YES` if all conditions are satisfied; otherwise `NO`.
+
+---
+
+### 4. String Rotation Game
+- File: `String_rotationGame.cpp`
+- Difficulty: Easy
+- Description:
+  Analyze different rotations of a string and determine the best possible result according to the problem rules.
+- Approach:
+  1. Generate possible rotations.
+  2. Evaluate each rotation.
+  3. Return the optimal answer.
+
+---
+
+### 5. Your Name
+- File: `your_Nmae.cpp`
+- Difficulty: Easy
+- Description:
+  Process the given strings and determine whether the required condition holds.
+- Approach:
+  1. Read the input strings.
+  2. Apply the required comparison logic.
+  3. Print the corresponding result.
+
+---
+
+### 6. Notelock
+- File: `notelock.cpp`
+- Difficulty: Easy
+- Description:
+  Count the minimum number of protected positions while maintaining the required spacing constraint.
+- Approach:
+  1. Traverse the note sequence.
+  2. Track the last protected position.
+  3. Create a new protected position only when the gap condition is satisfied.
+  4. Output the total count.
+
+---
+
+### 7. Discounts
+- File: `discounts.cpp`
+- Difficulty: Easy
+- Description:
+  Calculate the final cost after applying the discount rules specified in the problem.
+- Approach:
+  1. Read item prices and discount information.
+  2. Apply the required discount strategy.
+  3. Output the resulting value.
+
+---
+
+### 8. Journey
+- File: `journey.cpp`
+- Difficulty: Easy
+- Description:
+  Determine the optimal outcome for the journey based on the given constraints.
+- Approach:
+  1. Process the input parameters.
+  2. Apply the mathematical/greedy logic required by the problem.
+  3. Print the final answer.
+
+---
+
+### 9. Trippi Troppi
+- File: `trippi_Troppi.cpp`
+- Difficulty: Easy
+- Description:
+  Convert the ancient country name into its modern abbreviation.
+- Approach:
+  1. Read the three words forming the ancient name.
+  2. Extract the first character from each word.
+  3. Concatenate them and print the resulting abbreviation.
+
+---
+
+## How to Run
+
+Compile any solution using:
+
+```bash
+g++ filename.cpp -o output
+./output
